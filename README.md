@@ -7,6 +7,7 @@ Three complete static storefronts for skincare and beauty brands. Each folder is
 | Alba | Blue-and-white porcelain luxury | [`alba/`](alba/) |
 | Mochi | Playful pastel K-beauty | [`mochi/`](mochi/) |
 | Moss & Mineral | Botanical apothecary | [`moss/`](moss/) |
+| Norina | Korean K-beauty brand site (Korean / English) | [`norina/`](norina/) |
 
 Every theme includes home, shop (filters and sorting), product page, about, contact, checkout (demo) and a persistent cart drawer.
 Products are edited in each theme's `data/products.js`. See the README inside each folder.
