@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our apothecary — Moss & Mineral</title>
+<meta name="description" content="Where and how Moss & Mineral skincare is made.">
+<meta property="og:title" content="Our apothecary — Moss & Mineral">
+<meta property="og:description" content="Where and how Moss & Mineral skincare is made.">
+<meta property="og:image" content="assets/scenes/hero.webp">
+<meta name="theme-color" content="#2F3D2B">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <a class="logo" href="index.html"><svg class="leaf" viewBox="0 0 40 40" width="22" height="22" aria-hidden="true"><path d="M20 36C20 22 12 12 4 9c9 0 15 5 16 12 1-9 7-16 16-18-7 5-12 14-12 26" fill="currentColor"/></svg><span>Moss &amp; Mineral</span></a>
+  <nav class="hdr-nav" id="nav" data-nav aria-label="Main">
+    <a href="shop.html">The register</a><a href="index.html#botanicals">Botanicals</a><a href="about.html">Our apothecary</a><a href="contact.html">Contact</a>
+  </nav>
+  <button type="button" class="bag" data-cart-open><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 9h18l-2 11H5L3 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 9l4-6 4 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Basket</span><span class="bag-n" data-cart-count hidden>0</span></button>
+  <button class="hdr-menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="1.5"/></svg><span class="sr">Menu</span></button>
+</header>
+<main id="main">
+
+<section class="page-head"><h1>Our apothecary</h1><p>A converted dairy in the Peak District, a still, a lot of amber glass and four people.</p></section>
+<section class="story about-story">
+  <figure><img src="assets/scenes/story.webp" alt="Amber glass bottles among botanical sprigs" width="1400" height="1600" loading="lazy"></figure>
+  <div class="story-txt">
+    <h2>One plant, one active, one percentage</h2>
+    <p>Most labels list thirty ingredients and tell you nothing about how much of each. We build every formula around a single botanical and a single proven active, and we print the percentage of that active on the front.</p>
+    <p>Plants come from growers we visit. Actives come from suppliers who share their stability data. Everything is mixed in batches of four hundred, so nothing sits in a warehouse for a year.</p>
+  </div>
+</section>
+<section class="standards" aria-labelledby="st-h">
+  <div class="sec-head"><h2 id="st-h">What we hold ourselves to</h2></div>
+  <dl class="std-list">
+    <div><dt>Traceable plants</dt><dd>Every botanical is named with its origin and harvest month on our website.</dd></div>
+    <div><dt>Printed percentages</dt><dd>The key active and its amount are on the front label, not hidden in the list.</dd></div>
+    <div><dt>Amber glass and refills</dt><dd>Light-proof glass bottles and a free refill for every five empties returned.</dd></div>
+    <div><dt>Gentle by default</dt><dd>No added fragrance in leave-on formulas. Every batch is patch-tested.</dd></div>
+  </dl>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <p class="ftr-logo"><svg class="leaf" viewBox="0 0 40 40" width="22" height="22" aria-hidden="true"><path d="M20 36C20 22 12 12 4 9c9 0 15 5 16 12 1-9 7-16 16-18-7 5-12 14-12 26" fill="currentColor"/></svg>Moss &amp; Mineral</p>
+      <p>Small-batch botanical skincare, made by hand in the Peak District since 2019.</p>
+    </div>
+    <div class="ftr-news">
+      <h2>The seasonal letter</h2>
+      <p>Four times a year: what's being harvested, what's being bottled, and first access to limited batches.</p>
+      <form class="news" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="Your email" autocomplete="email" required>
+        <button class="btn btn-light" type="submit">Subscribe</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <nav class="ftr-cols" aria-label="Footer">
+      <div><h3>Shop</h3><a href="shop.html">The register</a><a href="shop.html?category=treat">Serums</a><a href="shop.html?category=moisturize">Creams</a><a href="shop.html?category=protect">Sun care</a></div>
+      <div><h3>Help</h3><a href="contact.html">Contact</a><a href="contact.html#faq">Delivery &amp; returns</a><a href="checkout.html">Checkout</a></div>
+      <div><h3>Visit</h3><a href="about.html">Our apothecary</a><a href="#">Instagram</a><a href="#">Journal</a></div>
+    </nav>
+  </div>
+  <p class="ftr-legal">© 2026 Moss &amp; Mineral. Template content — replace with your own.</p>
+</footer>
+<script src="data/products.js"></script>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

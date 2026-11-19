@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About us — Mochi</title>
+<meta name="description" content="Who makes Mochi and what goes into every formula.">
+<meta property="og:title" content="About us — Mochi">
+<meta property="og:description" content="Who makes Mochi and what goes into every formula.">
+<meta property="og:image" content="assets/scenes/hero.webp">
+<meta name="theme-color" content="#D9CCFF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="Mochi home">mochi</a>
+  <nav class="hdr-nav" id="nav" data-nav aria-label="Main">
+    <a href="shop.html">Shop all</a><a href="shop.html?category=treat">Serums</a><a href="index.html#routine">Routines</a><a href="about.html">About</a><a href="contact.html">Help</a>
+  </nav>
+  <div class="hdr-tools">
+    <button type="button" class="bag" data-cart-open><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Bag</span><span class="bag-n" data-cart-count hidden>0</span></button>
+    <button class="hdr-menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><h1>Hi, we're Mochi</h1><p>A tiny team in Seoul making skincare that's gentle, fun and honestly priced.</p></section>
+<section class="about">
+  <figure class="about-fig"><img src="assets/scenes/story.webp" alt="Swatches of Mochi textures: cream, jelly, serum and toner" width="1400" height="1600" loading="lazy"></figure>
+  <div class="about-txt">
+    <h2>Why so squishy?</h2>
+    <p>We started Mochi because skincare felt either clinical and cold or confusing and expensive. We wanted formulas that work, feel amazing and don't need a dictionary to understand.</p>
+    <p>Every product is made in a certified lab in Seoul, tested on sensitive skin and priced under $35. We tell you what's inside, how much, and what it does. That's it.</p>
+    <ul class="promises">
+      <li><b>Vegan</b> formulas, never tested on animals</li>
+      <li><b>pH 5.5</b> cleansers and toners</li>
+      <li><b>No added fragrance</b> in leave-on products</li>
+      <li><b>Recyclable</b> tubes, jars and bottles</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-news">
+      <h2>Get 10% off your first order</h2>
+      <p>Plus new drops and restock alerts. No spam, unsubscribe any time.</p>
+      <form class="news" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button class="btn btn-pop" type="submit">Sign me up</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <nav class="ftr-cols" aria-label="Footer">
+      <div><h3>Shop</h3><a href="shop.html">Shop all</a><a href="shop.html?category=cleanse">Cleansers</a><a href="shop.html?category=treat">Serums</a><a href="shop.html?category=protect">Sunscreen</a></div>
+      <div><h3>Help</h3><a href="contact.html">Contact us</a><a href="contact.html#faq">Shipping &amp; returns</a><a href="checkout.html">Checkout</a></div>
+      <div><h3>Mochi</h3><a href="about.html">About us</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+    </nav>
+  </div>
+  <p class="ftr-mark" aria-hidden="true">mochi</p>
+  <p class="ftr-legal">© 2026 Mochi Skin Co. Template content — replace with your own.</p>
+</footer>
+<script src="data/products.js"></script>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

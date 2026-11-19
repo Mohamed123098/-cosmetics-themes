@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check out — Mochi</title>
+<meta name="description" content="Complete your Mochi order.">
+<meta property="og:title" content="Check out — Mochi">
+<meta property="og:description" content="Complete your Mochi order.">
+<meta property="og:image" content="assets/scenes/hero.webp">
+<meta name="theme-color" content="#D9CCFF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="Mochi home">mochi</a>
+  <nav class="hdr-nav" id="nav" data-nav aria-label="Main">
+    <a href="shop.html">Shop all</a><a href="shop.html?category=treat">Serums</a><a href="index.html#routine">Routines</a><a href="about.html">About</a><a href="contact.html">Help</a>
+  </nav>
+  <div class="hdr-tools">
+    <button type="button" class="bag" data-cart-open><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Bag</span><span class="bag-n" data-cart-count hidden>0</span></button>
+    <button class="hdr-menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><h1>Check out</h1></section>
+<section class="checkout" data-checkout>
+  <form class="co-form" id="co-form" novalidate>
+    <fieldset><legend>Contact</legend><div class="field"><label for="co-email">Email</label><input id="co-email" type="email" autocomplete="email" required></div></fieldset>
+    <fieldset><legend>Shipping to</legend>
+      <div class="row2"><div class="field"><label for="co-first">First name</label><input id="co-first" autocomplete="given-name" required></div>
+      <div class="field"><label for="co-last">Last name</label><input id="co-last" autocomplete="family-name" required></div></div>
+      <div class="field"><label for="co-addr">Address</label><input id="co-addr" autocomplete="street-address" required></div>
+      <div class="row2"><div class="field"><label for="co-city">City</label><input id="co-city" autocomplete="address-level2" required></div>
+      <div class="field"><label for="co-zip">Postal code</label><input id="co-zip" autocomplete="postal-code" required></div></div>
+      <div class="field"><label for="co-country">Country</label><select id="co-country" autocomplete="country-name"><option>South Korea</option><option>Egypt</option><option>Saudi Arabia</option><option>United Kingdom</option><option>United States</option></select></div></fieldset>
+    <fieldset><legend>Payment</legend><div class="pay-note"><p>Your payment form goes here.</p><p>Plug in Stripe, PayPal, Paymob or another hosted checkout. This template never asks for card details itself.</p></div></fieldset>
+    <button class="btn btn-solid btn-big" type="submit">Place order</button>
+    <p class="form-msg" aria-live="polite"></p>
+  </form>
+  <aside class="co-sum" aria-labelledby="sum-h"><h2 id="sum-h">Order summary</h2><div data-summary></div></aside>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-news">
+      <h2>Get 10% off your first order</h2>
+      <p>Plus new drops and restock alerts. No spam, unsubscribe any time.</p>
+      <form class="news" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button class="btn btn-pop" type="submit">Sign me up</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <nav class="ftr-cols" aria-label="Footer">
+      <div><h3>Shop</h3><a href="shop.html">Shop all</a><a href="shop.html?category=cleanse">Cleansers</a><a href="shop.html?category=treat">Serums</a><a href="shop.html?category=protect">Sunscreen</a></div>
+      <div><h3>Help</h3><a href="contact.html">Contact us</a><a href="contact.html#faq">Shipping &amp; returns</a><a href="checkout.html">Checkout</a></div>
+      <div><h3>Mochi</h3><a href="about.html">About us</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+    </nav>
+  </div>
+  <p class="ftr-mark" aria-hidden="true">mochi</p>
+  <p class="ftr-legal">© 2026 Mochi Skin Co. Template content — replace with your own.</p>
+</footer>
+<script src="data/products.js"></script>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

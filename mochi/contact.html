@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help — Mochi</title>
+<meta name="description" content="Contact Mochi about orders, routines and ingredients.">
+<meta property="og:title" content="Help — Mochi">
+<meta property="og:description" content="Contact Mochi about orders, routines and ingredients.">
+<meta property="og:image" content="assets/scenes/hero.webp">
+<meta name="theme-color" content="#D9CCFF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="Mochi home">mochi</a>
+  <nav class="hdr-nav" id="nav" data-nav aria-label="Main">
+    <a href="shop.html">Shop all</a><a href="shop.html?category=treat">Serums</a><a href="index.html#routine">Routines</a><a href="about.html">About</a><a href="contact.html">Help</a>
+  </nav>
+  <div class="hdr-tools">
+    <button type="button" class="bag" data-cart-open><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Bag</span><span class="bag-n" data-cart-count hidden>0</span></button>
+    <button class="hdr-menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><h1>Need a hand?</h1><p>Ask us anything: orders, routines, ingredients. A real human replies within a day.</p></section>
+<section class="contact">
+  <form class="cform" data-contact novalidate>
+    <div class="row2"><div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" autocomplete="name" required></div>
+    <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div></div>
+    <div class="field"><label for="c-topic">What's it about?</label><select id="c-topic" name="topic"><option>My routine</option><option>My order</option><option>Ingredients</option><option>Wholesale</option></select></div>
+    <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+    <button class="btn btn-solid" type="submit">Send message</button>
+    <p class="form-msg" aria-live="polite"></p>
+  </form>
+  <aside class="cinfo">
+    <div class="sticker s1"><b>Email</b><a href="mailto:hello@example.com">hello@example.com</a></div>
+    <div class="sticker s2"><b>Chat</b>Mon–Fri, 10:00–19:00 KST</div>
+    <div class="sticker s3"><b>Studio</b>Seongsu-dong, Seoul</div>
+  </aside>
+</section>
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Quick answers</h2>
+  <details><summary>How fast is shipping?</summary><p>Orders ship within 48 hours. Most arrive in 3–6 working days. Free shipping on orders over $40.</p></details>
+  <details><summary>Can I return something I've opened?</summary><p>Yes. If it's not for you, tell us within 30 days and we'll refund you, opened or not.</p></details>
+  <details><summary>I have sensitive skin. Where should I start?</summary><p>Try the Bubble Jelly Cleanser, Dewy Drop Toner and Cloud Barrier Cream for two weeks before adding actives.</p></details>
+  <details><summary>Can I use vitamin C and retinal together?</summary><p>Use Juicy C Serum in the morning and Sleepy Retinal Serum at night. That's exactly what our routines do.</p></details>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-news">
+      <h2>Get 10% off your first order</h2>
+      <p>Plus new drops and restock alerts. No spam, unsubscribe any time.</p>
+      <form class="news" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button class="btn btn-pop" type="submit">Sign me up</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <nav class="ftr-cols" aria-label="Footer">
+      <div><h3>Shop</h3><a href="shop.html">Shop all</a><a href="shop.html?category=cleanse">Cleansers</a><a href="shop.html?category=treat">Serums</a><a href="shop.html?category=protect">Sunscreen</a></div>
+      <div><h3>Help</h3><a href="contact.html">Contact us</a><a href="contact.html#faq">Shipping &amp; returns</a><a href="checkout.html">Checkout</a></div>
+      <div><h3>Mochi</h3><a href="about.html">About us</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+    </nav>
+  </div>
+  <p class="ftr-mark" aria-hidden="true">mochi</p>
+  <p class="ftr-legal">© 2026 Mochi Skin Co. Template content — replace with your own.</p>
+</footer>
+<script src="data/products.js"></script>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

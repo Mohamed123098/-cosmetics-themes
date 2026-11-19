@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi — Squishy, gentle K-beauty</title>
+<meta name="description" content="Bouncy K-beauty textures with gentle actives. Eight formulas under $35, made in Seoul.">
+<meta property="og:title" content="Mochi — Squishy, gentle K-beauty">
+<meta property="og:description" content="Bouncy K-beauty textures with gentle actives. Eight formulas under $35, made in Seoul.">
+<meta property="og:image" content="assets/scenes/hero.webp">
+<meta name="theme-color" content="#D9CCFF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="Mochi home">mochi</a>
+  <nav class="hdr-nav" id="nav" data-nav aria-label="Main">
+    <a href="shop.html">Shop all</a><a href="shop.html?category=treat">Serums</a><a href="index.html#routine">Routines</a><a href="about.html">About</a><a href="contact.html">Help</a>
+  </nav>
+  <div class="hdr-tools">
+    <button type="button" class="bag" data-cart-open><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Bag</span><span class="bag-n" data-cart-count hidden>0</span></button>
+    <button class="hdr-menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="hero-txt">
+    <h1>Skincare that squishes back</h1>
+    <p>Bouncy textures, gentle actives and zero fuss. Eight formulas made in Seoul for skin that's a little bit extra.</p>
+    <div class="hero-cta"><a class="btn btn-solid" href="shop.html">Shop bestsellers</a><a class="btn" href="#routine">Build a routine</a></div>
+    <ul class="hero-facts" aria-label="Good to know">
+      <li><b>pH 5.5</b> cleansers and toners</li><li><b>Vegan</b> and never tested on animals</li><li><b>Under $35</b> for every formula</li>
+    </ul>
+  </div>
+  <figure class="hero-fig"><img src="assets/scenes/hero.webp" alt="Juicy C Serum, Dewy Drop Toner, Cloud Barrier Cream and Sun Mochi SPF on coloured blobs" width="1800" height="1100" fetchpriority="high"></figure>
+</section>
+
+<section class="moods" aria-labelledby="moods-h">
+  <h2 id="moods-h">What's your skin up to today?</h2>
+  <div class="mood-list" data-moods></div>
+</section>
+
+<section class="best" aria-labelledby="best-h">
+  <div class="sec-head"><h2 id="best-h">Bestsellers</h2><a class="btn btn-small" href="shop.html">See all 8</a></div>
+  <div class="grid" data-rail="best"></div>
+</section>
+
+<section class="textures" aria-labelledby="tex-h">
+  <div class="sec-head"><h2 id="tex-h">Textures you'll want to touch</h2><p>Every formula is tuned for how it feels, not just what it does.</p></div>
+  <div class="tex-list" data-textures></div>
+</section>
+
+<section class="routine" id="routine" aria-labelledby="rt-h">
+  <div class="sec-head"><h2 id="rt-h">Your routine in five squishes</h2>
+    <div class="rt-tabs" role="tablist" aria-label="Routine">
+      <button role="tab" id="tab-am" aria-selected="true" aria-controls="rt-panel" data-rt="am">Morning</button>
+      <button role="tab" id="tab-pm" aria-selected="false" aria-controls="rt-panel" data-rt="pm" tabindex="-1">Night</button></div></div>
+  <div id="rt-panel" role="tabpanel" aria-labelledby="tab-am"><ol class="rt-steps" data-routine></ol>
+  <div class="rt-buy"><p data-rt-total></p><button class="btn btn-solid" type="button" data-add-routine>Add the whole routine</button></div></div>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-news">
+      <h2>Get 10% off your first order</h2>
+      <p>Plus new drops and restock alerts. No spam, unsubscribe any time.</p>
+      <form class="news" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button class="btn btn-pop" type="submit">Sign me up</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <nav class="ftr-cols" aria-label="Footer">
+      <div><h3>Shop</h3><a href="shop.html">Shop all</a><a href="shop.html?category=cleanse">Cleansers</a><a href="shop.html?category=treat">Serums</a><a href="shop.html?category=protect">Sunscreen</a></div>
+      <div><h3>Help</h3><a href="contact.html">Contact us</a><a href="contact.html#faq">Shipping &amp; returns</a><a href="checkout.html">Checkout</a></div>
+      <div><h3>Mochi</h3><a href="about.html">About us</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+    </nav>
+  </div>
+  <p class="ftr-mark" aria-hidden="true">mochi</p>
+  <p class="ftr-legal">© 2026 Mochi Skin Co. Template content — replace with your own.</p>
+</footer>
+<script src="data/products.js"></script>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
